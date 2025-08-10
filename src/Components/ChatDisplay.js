@@ -4,6 +4,7 @@ import Message from "./Message";
 const ChatDisplay = ({ messages, isTyping }) => {
   return (
     <div className="chat-display">
+<div className="message-bubble">
       {messages.map((message, index) => (
         <Message key={index} message={message} />
       ))}
@@ -15,7 +16,8 @@ const ChatDisplay = ({ messages, isTyping }) => {
         </div>
       )}
     </div>
+    </div>
   );
 };
 
-export default ChatDisplay
+export default ChatDisplay;
